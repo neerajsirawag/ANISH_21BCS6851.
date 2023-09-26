@@ -1,0 +1,161 @@
+$cuRed: #ef0000;
+$cuRedDark: #cd0303;
+
+
+.body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.login-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat; 
+    background-size: auto; 
+    .login-wrapper-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading{
+        font-family: system-ui;
+        font-weight: 500;
+        font-size: 2.2rem;
+        color: rgba(0,0,0,0.9);
+    }
+    .sub-heading{
+        margin-top: -20px;
+        font-family: system-ui;
+        font-size: 1.2rem;
+    }
+}
+
+.webLogo{
+    margin-top: 1vh;
+    margin-left: 6vw;
+    width: 130px;
+}
+
+.auth-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+
+    .common-input{
+        height: 30px;
+        padding: 10px;
+        background-color: rgba(252, 252, 252, 0.125);
+        outline: none;
+        border: 1px solid #212121;
+        border-radius: 5px;
+        color: black;
+        font-family: system-ui;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    .common-input:hover{
+        outline: 1.5px solid $cuRed;
+        border: 1px solid $cuRed;
+    }
+    .common-input:focus{
+        outline: 1.5px solid $cuRed;
+        border: 1px solid $cuRed;
+    }
+    input::placeholder{
+        color: black;
+        font-family: system-ui;
+        font-size: 15px;
+
+    }
+
+
+    label{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+        font-size: 15px;
+        img{
+            height: 40px;
+            width:25px;
+        }
+    }
+
+}
+
+.login-btn{
+    margin-top: 20px;
+    width: 400px;
+    height: 50px;
+    cursor: pointer;
+    background-color: $cuRed;
+    border: none;
+    border-radius: 40px;
+    font-family: system-ui;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.login-btn:hover{
+    // box-shadow: .01px .01px 1px .01px black;
+    // background-color: $cuRedDark;
+    letter-spacing: .05em;
+}
+
+.hr-text {
+    line-height: 2px;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .9;
+    &:before {
+      content: '';
+      background: linear-gradient(to right, transparent, #000000,#000000,#000000, transparent);
+      position: relative;
+      display: block;
+      margin: auto;
+      top: 50%;
+      width: 400px;
+      height: 1px;
+    }
+    &:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+      padding: 0 .5em;
+      line-height: 1.5em;
+      color: #000000;
+      background-color: #f3f2f0;
+    }
+  }
+
+  .google-btn{
+    width: 400px !important;
+    border-radius: 4px !important;
+    background-color: white !important;
+    color: black !important;
+  }
+ 
+  .go-to-signup{
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .join-now{
+    color: $cuRed;
+    font-family: system-ui;
+    cursor: pointer;
+  }
